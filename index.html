@@ -4,24 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cửu Âm Chân Kinh</title>
-  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="styles.css?v=30" />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ================== TOP NAV ================== -->
+  <!-- ===== TOP NAV ===== -->
   <header class="topbar">
     <div class="wrap topbar__inner">
-      <nav class="topnav left">
+      <nav class="nav left">
         <a href="#">Tin tức</a>
         <a href="#">Sự kiện</a>
         <a href="#">Hướng dẫn</a>
       </nav>
 
-      <!-- Logo tròn ở giữa thanh top (theo mẫu) -->
+      <!-- logo tròn nhỏ ở giữa thanh (mẫu không có file riêng nên dùng vòng tròn) -->
       <div class="brand-dot" aria-hidden="true"></div>
 
-      <nav class="topnav right">
+      <nav class="nav right">
         <a href="#">Download</a>
         <a href="#">Hỗ trợ</a>
         <a href="#">Cộng đồng</a>
@@ -29,22 +29,20 @@
     </div>
   </header>
 
-  <!-- ================== HERO ================== -->
-  <section class="hero">
-    <!-- image2: banner lớn “Triệu Mẫn” -->
-    <img src="image2.jpg" alt="Triệu Mẫn - Tân xuân Cửu Âm" />
-  </section>
+  <!-- ===== HERO LỚN ===== -->
+  <section class="hero"></section>
 
-  <!-- ================== STAGE (Overlay lên hero) ================== -->
+  <!-- ===== KHỐI TRUNG TÂM (đè lên hero) ===== -->
   <main class="stage">
     <div class="wrap stage__inner">
 
       <!-- Trang trí đèn lồng -->
       <img class="lantern" src="image10.png" alt="" aria-hidden="true">
 
-      <!-- Panel chính (giữa) -->
+      <!-- Panel giữa -->
       <section class="panel">
-        <!-- Hàng trên: Tải Game – Tháng 03 – 2x2 đỏ -->
+
+        <!-- Hàng trên: Tải Game – Tháng 03 – Block 2x2 đỏ -->
         <div class="row row-top">
           <a class="tile t-dl" href="#" title="Tải game">
             <img src="image3.jpg" alt="Tải Game">
@@ -64,7 +62,7 @@
           <img src="image6.png" alt="Nhận quà • VIP • Giftcode">
         </div>
 
-        <!-- Thanh tab (nền xanh viền đỏ) -->
+        <!-- Thanh tab (nền xanh, viền đỏ trên) -->
         <div class="tabbar">
           <img class="tabbar-bg" src="image13.png" alt="" aria-hidden="true">
           <ul class="tabs">
@@ -76,13 +74,13 @@
           </ul>
         </div>
 
-        <!-- Box tin tức -->
-        <section class="news">
+        <!-- Box tin tức (khung viền xanh đậm như mẫu) -->
+        <section class="news-box">
           <article class="news-item">
             <a class="thumb"><img src="image11.jpg" alt="Đăng nhập nhận quà"></a>
             <div class="text">
               <h3>23h59 ngày 17/03/2022, kết thúc sự kiện ĐĂNG NHẬP NHẬN QUÀ</h3>
-              <p>Các đại hiệp đừng quên vào Cửu Âm Chân Kinh nhận phần quà hấp dẫn nhé. Tham gia ngay!</p>
+              <p>Các đại hiệp đừng quên vào Cửu Âm Chân Kinh nhận những phần quà hấp dẫn nhé. Tham gia ngay!</p>
             </div>
           </article>
 
@@ -90,12 +88,12 @@
             <a class="thumb"><img src="image14.jpg" alt="Sự kiện"></a>
             <div class="text">
               <h3>Hành tẩu giang hồ, nhận quà cực đã</h3>
-              <p>Chuỗi hoạt động sôi nổi, mở lại sự kiện 723-990. NPC Cửu Âm Lệnh đã xuất hiện, chi tiết xem tại trang sự kiện.</p>
+              <p>Chuỗi hoạt động sôi nổi, mở lại sự kiện 723-990. NPC Cửu Âm Lệnh đã xuất hiện – chi tiết xem tại trang sự kiện.</p>
             </div>
           </article>
 
           <article class="news-item">
-            <a class="thumb"><img src="image12.png" alt="Chuỗi sự kiện Tháng 03"></a>
+            <a class="thumb"><img src="image12.png" alt="Tháng 03"></a>
             <div class="text">
               <h3>Chuỗi sự kiện Tháng 03/2022</h3>
               <p>Chào tháng mới, nhiều ưu đãi hấp dẫn dành cho toàn bộ đại hiệp. Cùng khám phá nhé!</p>
@@ -103,29 +101,28 @@
           </article>
 
           <div class="news-actions">
-            <a href="#" class="btn">Lên trên</a>
-            <a href="#" class="btn">Xem thêm</a>
+            <a class="btn" href="#">Lên trên</a>
+            <a class="btn" href="#">Xem thêm</a>
           </div>
         </section>
       </section>
 
-      <!-- Sidebar phải (đứng sát panel theo mẫu) -->
+      <!-- Sidebar phải (hotline → 5 nút trắng → banner động) -->
       <aside class="sidebar">
-        <img class="block hotline" src="image8.png" alt="Hotline 1900 7189">
-        <img class="block white-nav" src="image9.png" alt="Bảo điển • Môn phái • Tân thủ • Võ học • PVC-Pet">
-        <img class="block ad" src="image16.gif" alt="Triệu Mẫn – Banner động">
+        <img class="block hotline" src="image8.png" alt="1900 7189">
+        <img class="block vertical" src="image9.png" alt="Bảo điển/Môn phái/Tân thủ/Võ học/PVC-Pet">
+        <img class="block ad" src="image16.gif" alt="Triệu Mẫn">
       </aside>
 
     </div>
   </main>
 
-  <!-- ================== FOOTER ================== -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <!-- image1: nền núi mờ -->
     <img class="bg" src="image1.jpg" alt="">
     <div class="wrap f__inner">
       <img class="gosu" src="image7.png" alt="GOSU">
-      <p class="legal">© GOSU • Điều khoản • Chính sách • Hỗ trợ • Địa chỉ: 62 Lê Lợi, Q.1, TP.HCM</p>
+      <p class="legal">© GOSU • Điều khoản • Chính sách • Hỗ trợ</p>
     </div>
   </footer>
 
